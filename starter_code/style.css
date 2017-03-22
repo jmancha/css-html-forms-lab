@@ -24,8 +24,21 @@
 /*-------- Form Styles --------*/
 
 
-/* 
+ 	
 
+ 	h1{
+ 		font-size: 30px;
+ 		font-weight: bold;
+ 		font-family: 'Proza Libre', sans-serif;
+
+ 		}
+ 	
+
+
+
+
+
+	
 	Make sure the form itself fills the width of whatever container its in, but no larger than 500px.
 	
 	The background should be #E3E6EC, and it should align to the middle of its container.

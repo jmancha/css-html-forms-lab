@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>CSS HTML Forms Lab</title>
+
+	<title>My Dev Story</title>
 	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Proza+Libre:800" rel="stylesheet">
+
 </head>
 <body>
 	<section id="main">
 		<section class="formSection container">
-			<form class="form" method="GET">
-					<h1>My Dev Story</h1>
+		<form class="form" method="GET">
+
+				<h1>My Dev Story</h1>
+
 					<div class="row formGroup">
 					    <label for="name">Name:</label>
 					    <input id="name" name="name" >
@@ -34,7 +39,7 @@
 				    	</select>
 					</div>
 					<div class="row formGroup">
-				    	<label for="mission">Misison Statement:</label>
+				    	<label for="mission">Mission Statement:</label>
 				    	<textarea id="mission" name="mission"></textarea>
 					</div>
 
@@ -81,7 +86,7 @@
 					</div>
 					<div class="row formGroup">
 				    	<label for="noun-2">Noun:</label>
-				    	<input id="noun-2" name="noun-2">
+				    	<input id="noun-2" name="Noun">
 					</div>
 					<div class="row formGroup">
 				    	<input type="submit">
@@ -102,7 +107,9 @@
 			results.innerHTML = '<h1>' + 'A true story:' + '</h1>';
 			results.className = 'container results';
 			main.appendChild(results);
-		};
+	
+		}
+		
 		/*
 		
 			Make a function that will create <section> element and append it to #main.
@@ -114,7 +121,30 @@
 
 
 		$("form").on("submit", function(event){
+			console.log("form has been submitted");
 
+ 			makeResults();
+			
+			var name = $('#name').val();
+
+			var verb1 = $('#verb1').val();
+
+			var mission = $('#mission').val();
+
+			var radioButtons = $('#radioButtons').val();
+
+			var radio = $('#radio').val();
+
+			var radio1 = $('#radio1').val();
+
+			var radio2 = $('#radio2').val();
+
+			var radio3 = $('#radio3').val();
+
+			//form ="
+			event.preventDefault();//validateMyForm();
+		}); 
+		   
 		    // Stop the form from submitting
 
 	    	// Append the new <section> created above.
@@ -134,7 +164,7 @@
 				"In the end, their success can be contributed entirely to their " + ADJECTIVE2[list each one checked, comma-separated] + NOUN2."
 
 	    	*/ 
-		});
+		
 	</script>
 
 </body>
